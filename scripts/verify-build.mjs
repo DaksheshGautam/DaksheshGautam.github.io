@@ -9,6 +9,7 @@ const analytics=readFileSync('dist/data-analytics/index.html','utf8');const scie
 assert.ok(analytics.includes('11 completed courses'));assert.ok(science.includes('12 completed courses'));
 assert.ok(analytics.includes('Commerce Pulse')&&!analytics.includes('Transaction Risk Detector'));
 assert.ok(science.includes('Transaction Risk Detector')&&!science.includes('Commerce Pulse'));
+assert.ok(science.includes('DigiDex')&&science.includes('FastF1Winner')&&!science.includes('LeakProfiler'),'Science projects must match the requested selection');
 const pdfs=readdirSync('public/certificates').filter(f=>f.endsWith('.pdf'));assert.equal(pdfs.length,20,'Expected two professional and 18 individual course PDFs');
 for(const pdf of pdfs)assert.equal(readFileSync(join('public/certificates',pdf)).subarray(0,5).toString(),'%PDF-',`Invalid PDF ${pdf}`);
 console.log(`Verified ${files.length} pages, route separation, internal links, optional controls, and ${pdfs.length} original certificate PDFs.`);
