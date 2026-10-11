@@ -25,7 +25,7 @@ npm test
 
 Two professional certificates and 18 unique constituent course certificates were checked in the authenticated Coursera account on 11 October 2026. The analyst credential contains 11 courses and science contains 12; five overlap. Original PDF files were downloaded from the PDF URLs exposed in Coursera's certificate viewer. JPG previews were rendered from the downloaded PDFs with Poppler, not captured from the browser. Preserve the original PDFs. Completion dates in the account can differ by one day from printed PDF dates; printed dates are preferred in the course data.
 
-Project descriptions and links come from the user's public repository READMEs. Live services may sleep or change availability. No academic qualifications or resume contents have been invented. Academic education remains pending until supplied.
+Project descriptions and links come from the user's public repository READMEs. Live services may sleep or change availability. Academic education is transcribed from the supplied Data Science resume. The portrait comes from the user's Desktop photo folder. LinkedIn and career email were supplied directly. The Data Analyst resume remains unavailable and its control is hidden.
 
 ## GitHub Pages
 
