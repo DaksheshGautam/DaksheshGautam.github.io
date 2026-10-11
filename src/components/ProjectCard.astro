@@ -1,0 +1,13 @@
+---
+import type { Project } from '../data/projects';
+import { localUrl } from '../data/urls';
+const {project:p,index=0}=Astro.props as {project:Project;index?:number};
+const primary=p.live || p.repo;
+---
+<article class="project-card">
+  {primary && <a class="project-visual" href={primary} target="_blank" rel="noopener noreferrer" aria-label={`Open ${p.title}`}>
+    {p.image ? <img src={p.image.startsWith('http') ? p.image : localUrl(p.image)} alt={p.imageAlt || p.title} loading="lazy" /> : <div class="code-visual"><span>LEAKPROFILER</span><div><i></i><i></i><i></i><i></i><i></i></div><p>Inspect. Understand. Validate.</p></div>}
+    <span class="visual-arrow" aria-hidden="true">↗</span>
+  </a>}
+  <div class="project-copy"><p class="eyebrow">{String(index+1).padStart(2,'0')} / {p.category}</p><h3>{primary ? <a href={primary} target="_blank" rel="noopener noreferrer">{p.title}</a> : p.title}</h3><p>{p.description}</p><div class="skills">{p.skills.map(s=><span>{s}</span>)}</div><div class="project-actions">{p.live && <a href={p.live} target="_blank" rel="noopener noreferrer">{p.title==='LeakProfiler'?'View package':'Open project'} ↗</a>}{p.repo && <a href={p.repo} target="_blank" rel="noopener noreferrer">GitHub ↗</a>}</div>{p.note && <p class="project-note">{p.note}</p>}</div>
+</article>

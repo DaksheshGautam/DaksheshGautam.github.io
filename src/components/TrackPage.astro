@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from './ProjectCard.astro';
+import Certification from './Certification.astro';
+import {projects,type Track} from '../data/projects';
+import {certifications} from '../data/certificates';
+import {profile} from '../data/profile';
+import {localUrl} from '../data/urls';
+const {track}=Astro.props as {track:Track};
+const analytics=track==='analytics';
+const name=analytics?'Data Analytics':'Data Science';
+const selected=projects.filter(p=>p.track===track);
+const resume=profile.resumes[track];
+---
+<Layout track={track} title={`${name} · ${profile.name}`}>
+<section class="track-hero container"><a class="back-link" href={localUrl()}>← Back to overview</a><p class="eyebrow">{analytics?'INSIGHT & DECISION-MAKING':'MODELS & EXPERIMENTATION'}</p><h1>{analytics?'Find the story':'Ask better questions'}<br/><em>{analytics?'inside the data.':'of the model.'}</em></h1><div class="track-hero-bottom"><p>{analytics?'Exploring patterns, building dashboards, and communicating findings with the context they deserve.':'From data preparation to evaluation: exploring how machine learning can become a useful, understandable tool.'}</p><div class="hero-actions"><a class="button" href="#projects">Explore projects ↓</a>{resume && <a class="button secondary" href={localUrl(resume)} target="_blank" rel="noopener noreferrer">{analytics?'Data Analyst':'Data Scientist'} resume PDF ↗</a>}</div></div></section>
+<section id="projects" class="container projects-section"><div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Projects in practice<span class="count">{String(selected.length).padStart(2,'0')}</span></h2></div><p>Skills shown through the work.</p></div><div class="project-grid">{selected.map((p,i)=><ProjectCard project={p} index={i}/>)}</div></section>
+<section id="certifications" class="container certificates-section"><div class="section-heading"><div><p class="eyebrow">02 / VERIFIED LEARNING</p><h2>Credentials & courses</h2></div><p>Explore the certificate.<br/>Look closer at the learning.</p></div>{certifications.filter(c=>c.track===track).map(c=><Certification certificate={c}/>)}</section>
+<section class="container next-track"><div><p class="eyebrow">ANOTHER PERSPECTIVE</p><h2>{analytics?'Curious about the models?':'Looking for the insights?'}</h2></div><a class="button secondary" href={localUrl(analytics?'data-science/':'data-analytics/')}>Explore {analytics?'Data Science':'Data Analytics'} →</a></section>
+</Layout>

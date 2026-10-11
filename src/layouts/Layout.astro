@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+import {profile} from '../data/profile';
+import {localUrl} from '../data/urls';
+const {title='Dakshesh Gautam · Data Portfolio',description=profile.bio,track}=Astro.props;
+---
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="theme-color" content="#f7f7f2"/><title>{title}</title></head>
+<body data-track={track || 'home'}><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href={localUrl()}><span class="brand-icon">dg<span>.</span></span><span>Dakshesh Gautam<small>DATA PORTFOLIO</small></span></a><nav aria-label="Main navigation"><a href={localUrl()} aria-current={!track?'page':undefined}>Overview</a><a href={localUrl('data-analytics/')} aria-current={track==='analytics'?'page':undefined}>Analytics</a><a href={localUrl('data-science/')} aria-current={track==='science'?'page':undefined}>Data Science</a><a class="nav-contact" href={localUrl('#contact')}>Get in touch ↗</a></nav></header><main id="main"><slot/></main><footer><span>© {new Date().getUTCFullYear()} {profile.name}</span><span>Curiosity → evidence → insight</span><a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
+<dialog id="certificate-preview" aria-labelledby="preview-title"><div class="dialog-header"><h2 id="preview-title">Certificate preview</h2><button id="close-preview" aria-label="Close certificate preview">✕</button></div><img id="preview-image" alt=""/><p id="preview-error" hidden>Preview unavailable. Please use the credential verification link.</p></dialog>
+<script>
+ const dialog=document.querySelector<HTMLDialogElement>('#certificate-preview');
+ const img=document.querySelector<HTMLImageElement>('#preview-image');
+ const title=document.querySelector<HTMLElement>('#preview-title');
+ const error=document.querySelector<HTMLElement>('#preview-error');
+ document.querySelectorAll<HTMLButtonElement>('.preview-button').forEach(button=>button.addEventListener('click',()=>{
+   if(!dialog || !img || !title || !error) return;
+   title.textContent=button.dataset.title || 'Certificate preview'; img.alt=title.textContent;
+   img.hidden=false; error.hidden=true; img.src=button.dataset.image || ''; dialog.showModal();
+ }));
+ img?.addEventListener('error',()=>{if(img && error){img.hidden=true;error.hidden=false;}});
+ document.querySelector('#close-preview')?.addEventListener('click',()=>dialog?.close());
+ dialog?.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect(); if(e.clientX<r.left || e.clientX>r.right || e.clientY<r.top || e.clientY>r.bottom)dialog.close();}});
+</script></body></html>
