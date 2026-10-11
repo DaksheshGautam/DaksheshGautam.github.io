@@ -8,7 +8,7 @@ export const profile = {
   github: 'https://github.com/DaksheshGautam',
   resumes: { analytics: null as string | null, science: 'resumes/data-scientist.pdf' as string | null },
   education: [
-    {degree:'B.Tech in Electrical Engineering',institution:'Netaji Subhas University of Technology (NSUT), New Delhi',period:'Expected 2027',description:'An engineering foundation alongside practical work in data science and machine learning.',highlights:['ANN-based speed and position estimation for a BLDC motor','MATLAB and Simulink model integration']},
+    {degree:'B.Tech in Electrical Engineering',institution:'Netaji Subhas University of Technology (NSUT), New Delhi',period:'Expected 2027',description:'',highlights:[]},
     {degree:'Class XII · CBSE',institution:'DAV Schools Network, New Delhi',period:'2023',description:'Senior secondary education.',highlights:[]},
     {degree:'Class X · CBSE',institution:'S.L.S. D.A.V. Public School, New Delhi',period:'2021',description:'Secondary education.',highlights:[]},
   ] as {degree:string; institution:string; period:string; description:string; highlights:string[]}[],
