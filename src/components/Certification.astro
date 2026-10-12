@@ -4,8 +4,8 @@ import CredentialActions from './CredentialActions.astro';
 const { certificate:c } = Astro.props as {certificate:Certification};
 ---
 <article class="certificate">
-  <div class="cert-header"><div class="ibm-mark" aria-hidden="true">IBM</div><div><p class="eyebrow">{c.issuer} · COMPLETED OCTOBER 2026</p><h3>{c.title}</h3></div><span class="verified">✓ Earned</span></div>
+  <div class="cert-header">{c.issuer.startsWith('IBM') && <div class="ibm-mark" aria-hidden="true">IBM</div>}<div>{(c.issuer || c.date) && <p class="eyebrow">{[c.issuer,c.date ? `Completed ${c.date}` : ''].filter(Boolean).join(' · ')}</p>}<h3>{c.title}</h3></div><span class="verified">✓ Earned</span></div>
   <div class="skills">{c.skills?.map(s=><span>{s}</span>)}</div>
   <CredentialActions credential={c}/>
-  {c.courses.length > 0 && <details class="course-list"><summary><span>{c.courses.length} completed courses</span><span class="plus" aria-hidden="true">+</span></summary><ol>{c.courses.map((course,i)=><li><span class="course-number">{String(i+1).padStart(2,'0')}</span><div><h4>{course.title}</h4><p class="course-date">Completed {new Date(course.date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})}</p><CredentialActions credential={course}/></div></li>)}</ol></details>}
+  {c.courses.length > 0 && <details class="course-list"><summary><span>{c.courses.length} completed courses</span><span class="plus" aria-hidden="true">+</span></summary><ol>{c.courses.map((course,i)=><li><span class="course-number">{String(i+1).padStart(2,'0')}</span><div><h4>{course.title}</h4>{course.date && <p class="course-date">Completed {new Date(course.date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})}</p>}<CredentialActions credential={course}/></div></li>)}</ol></details>}
 </article>

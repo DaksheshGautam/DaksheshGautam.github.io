@@ -1,0 +1,174 @@
+[
+  {
+    "id": "Q5EI5EGSR2WS",
+    "title": "IBM Data Analyst Professional Certificate",
+    "track": "analytics",
+    "issuer": "IBM · Coursera",
+    "date": "2026-10-10",
+    "verify": "https://www.coursera.org/account/accomplishments/specialization/Q5EI5EGSR2WS",
+    "skills": [
+      "Excel",
+      "SQL",
+      "Python",
+      "Cognos Analytics",
+      "Data storytelling"
+    ],
+    "courses": [
+      {
+        "id": "GEGBEARGHHGS",
+        "title": "Introduction to Data Analytics",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/GEGBEARGHHGS"
+      },
+      {
+        "id": "P3N7CVZ9GQJC",
+        "title": "Excel Basics for Data Analysis",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/P3N7CVZ9GQJC"
+      },
+      {
+        "id": "2SK5VFJH7ZDJ",
+        "title": "Data Visualization and Dashboards with Excel and Cognos",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/2SK5VFJH7ZDJ"
+      },
+      {
+        "id": "2N7JWNY55YXH",
+        "title": "Python for Data Science, AI & Development",
+        "date": "2026-09-18",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/2N7JWNY55YXH"
+      },
+      {
+        "id": "VIR091GAE5DL",
+        "title": "Python Project for Data Science",
+        "date": "2026-09-19",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/VIR091GAE5DL"
+      },
+      {
+        "id": "KT12PGL85LEU",
+        "title": "Databases and SQL for Data Science with Python",
+        "date": "2026-09-23",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/KT12PGL85LEU"
+      },
+      {
+        "id": "YKQSS56JQX37",
+        "title": "Data Analysis with Python",
+        "date": "2026-09-24",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/YKQSS56JQX37"
+      },
+      {
+        "id": "D2YMV6MSCB8F",
+        "title": "Data Visualization with Python",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/D2YMV6MSCB8F"
+      },
+      {
+        "id": "6R5PWAPBFTUA",
+        "title": "IBM Data Analyst Capstone Project",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/6R5PWAPBFTUA"
+      },
+      {
+        "id": "AWCV4XY9PKLU",
+        "title": "Generative AI: Enhance your Data Analytics Career",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/AWCV4XY9PKLU"
+      },
+      {
+        "id": "K3Z01307D0P7",
+        "title": "Data Analyst Career Guide and Interview Preparation",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/K3Z01307D0P7"
+      }
+    ]
+  },
+  {
+    "id": "DFW1BGGD10XS",
+    "title": "IBM Data Science Professional Certificate",
+    "track": "science",
+    "issuer": "IBM · Coursera",
+    "date": "2026-10-11",
+    "verify": "https://www.coursera.org/account/accomplishments/specialization/DFW1BGGD10XS",
+    "skills": [
+      "Python",
+      "SQL",
+      "Machine learning",
+      "Model evaluation",
+      "Data visualization"
+    ],
+    "courses": [
+      {
+        "id": "1JYURMSVJR2Q",
+        "title": "What is Data Science?",
+        "date": "2026-05-26",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/1JYURMSVJR2Q"
+      },
+      {
+        "id": "ULDDQ70O9K40",
+        "title": "Tools for Data Science",
+        "date": "2026-07-26",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/ULDDQ70O9K40"
+      },
+      {
+        "id": "5WTCVEERQPIC",
+        "title": "Data Science Methodology",
+        "date": "2026-09-17",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/5WTCVEERQPIC"
+      },
+      {
+        "id": "2N7JWNY55YXH",
+        "title": "Python for Data Science, AI & Development",
+        "date": "2026-09-18",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/2N7JWNY55YXH"
+      },
+      {
+        "id": "VIR091GAE5DL",
+        "title": "Python Project for Data Science",
+        "date": "2026-09-19",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/VIR091GAE5DL"
+      },
+      {
+        "id": "KT12PGL85LEU",
+        "title": "Databases and SQL for Data Science with Python",
+        "date": "2026-09-23",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/KT12PGL85LEU"
+      },
+      {
+        "id": "YKQSS56JQX37",
+        "title": "Data Analysis with Python",
+        "date": "2026-09-24",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/YKQSS56JQX37"
+      },
+      {
+        "id": "D2YMV6MSCB8F",
+        "title": "Data Visualization with Python",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/D2YMV6MSCB8F"
+      },
+      {
+        "id": "5K9BR68EBLRP",
+        "title": "Machine Learning with Python",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/5K9BR68EBLRP"
+      },
+      {
+        "id": "EH9ZO30ZS0DL",
+        "title": "Applied Data Science Capstone",
+        "date": "2026-10-11",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/EH9ZO30ZS0DL"
+      },
+      {
+        "id": "F38DLPGFJS0X",
+        "title": "Generative AI: Elevate Your Data Science Career",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/F38DLPGFJS0X"
+      },
+      {
+        "id": "XHQKZM78BLBR",
+        "title": "Data Scientist Career Guide and Interview Preparation",
+        "date": "2026-10-10",
+        "verify": "https://www.coursera.org/account/accomplishments/verify/XHQKZM78BLBR"
+      }
+    ]
+  }
+]

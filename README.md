@@ -17,8 +17,8 @@ npm test
 ## Update content
 
 - `src/data/profile.ts`: portrait, contact links, academic education, and separate resume paths. Place PDFs in `public/resumes/` and set each track's path, for example `resumes/data-analyst.pdf`. Resumes are links only; they are never embedded. Null values hide the controls.
-- `src/data/projects.ts`: append a project record with its track, description, skills, and optional live/repository links. Project titles and visuals open the live project when available, otherwise the repository. Independent buttons allow visitors to choose either.
-- `src/data/certificates.ts`: append a professional certificate and its individually verified courses. Only earned, individually verified course credentials belong here. Shared records can appear in both tracks. Add downloaded PDFs and previews in `public/certificates/` named with the credential ID; controls appear only when files exist.
+- `content/projects.json`: append a project record with its track, description, skills, and optional live/repository links. Project titles and visuals open the live project when available, otherwise the repository. Independent buttons allow visitors to choose either.
+- `content/certifications.json`: append a professional certificate and its individually verified courses. Only earned, individually verified course credentials belong here. Shared records can appear in both tracks. Add downloaded PDFs and previews in `public/certificates/` named with the credential ID; controls appear only when files exist.
 - Each academic education record accepts degree, institution, period, description, and highlights; the layout expands automatically.
 
 ## Certificates
@@ -38,3 +38,6 @@ The included workflow installs from the lockfile, runs Astro validation, builds,
 Responsive layouts, visible keyboard focus, skip link, native course disclosures, labelled preview dialog, Escape/backdrop dismissal, focus return via native dialog, reduced-motion support, and descriptive links. No contact form or account is required.
 
 Third-party certificate branding and the personal photo retain their original ownership.
+
+
+See [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for copy-and-paste examples and the GitHub editing workflow.
