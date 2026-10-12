@@ -1,5 +1,23 @@
 [
   {
+    "title": "Funnel and Retention Analysis",
+    "track": "analytics",
+    "category": "E-COMMERCE / BUSINESS INTELLIGENCE",
+    "description": "Analysis of the GA4 Google Merchandise Store sample dataset, featuring a Power BI dashboard and a Streamlit app with Groq-powered RAG chat for exploring funnel conversion, retention, acquisition, and data quality.",
+    "skills": [
+      "Python",
+      "PostgreSQL",
+      "Power BI",
+      "Streamlit",
+      "API",
+      "LLM"
+    ],
+    "repo": "https://github.com/DaksheshGautam/funnel-and-retention-analysis",
+    "live": "https://funnel-and-retention-analysis.streamlit.app/",
+    "image": "projects/commerce-pulse.png",
+    "imageAlt": "Funnnel and retention website dashboard",
+  },
+  {
     "title": "Commerce Pulse",
     "track": "analytics",
     "category": "E-COMMERCE / BUSINESS INTELLIGENCE",
@@ -8,8 +26,10 @@
       "Python",
       "MySQL",
       "Power BI",
-      "Streamlit"
-    ],
+      "Streamlit",
+      "API",
+      "LLM"
+      ],
     "repo": "https://github.com/DaksheshGautam/commerce-pulse-analytics",
     "live": "https://dakshesh-commerce-pulse.streamlit.app/",
     "image": "projects/commerce-pulse.png",
@@ -40,6 +60,7 @@
     "skills": [
       "XGBoost",
       "scikit-learn",
+      "Python",
       "Flask",
       "Docker"
     ],
