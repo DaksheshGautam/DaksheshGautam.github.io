@@ -18,6 +18,40 @@
     "imageAlt": "Funnel and retention website dashboard"
   },
   {
+    "title": "Uber Ride Analytics",
+    "track": "analytics",
+    "category": "OPERATIONS / BUSINESS INTELLIGENCE",
+    "description": "An analysis of 150,000 NCR ride-booking observations that investigates booking reliability, cancellation patterns, demand peaks, and service performance through 24 SQL analyses and a six-page Power BI dashboard.",
+    "skills": [
+      "SQL",
+      "Python",
+      "Power BI",
+      "DAX",
+      "Data quality"
+    ],
+    "repo": "https://github.com/DaksheshGautam/uber-ride-analytics",
+    "image": "projects/uber-ride-analytics.png",
+    "imageAlt": "Uber Ride Analytics Power BI dashboard showing booking completion, outcomes, and monthly demand",
+    "note": "Portfolio analysis of a public Kaggle extract; findings describe the supplied dataset."
+  },
+  {
+    "title": "Marketing A/B Testing",
+    "track": "analytics",
+    "category": "EXPERIMENTATION / MARKETING ANALYTICS",
+    "description": "An A/B test analysis of 588,101 users that evaluates whether product advertising increases conversions against a PSA control, with statistical tests, uncertainty checks, SQL investigation, and a Power BI dashboard.",
+    "skills": [
+      "Python",
+      "SQL",
+      "A/B testing",
+      "Statistics",
+      "Power BI"
+    ],
+    "repo": "https://github.com/DaksheshGautam/marketing-ab-testing",
+    "image": "projects/marketing-ab-testing.png",
+    "imageAlt": "Marketing A/B testing Power BI dashboard",
+    "note": "Costs and revenue are unavailable, so the analysis evaluates conversion evidence rather than profitability."
+  },
+  {
     "title": "Commerce Pulse",
     "track": "analytics",
     "category": "E-COMMERCE / BUSINESS INTELLIGENCE",
