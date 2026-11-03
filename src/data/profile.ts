@@ -9,7 +9,9 @@ export const profile = {
   resumes: { analytics: null as string | null, science: 'resumes/data-scientist.pdf' as string | null },
   education: [
     {degree:'B.Tech in Electrical Engineering',institution:'Netaji Subhas University of Technology (NSUT), New Delhi',period:'Expected 2027',description:'',highlights:[]},
-    {degree:'Class XII · CBSE',institution:'DAV Schools Network, New Delhi',period:'2023',description:'Senior secondary education.',highlights:[]},
-    {degree:'Class X · CBSE',institution:'S.L.S. D.A.V. Public School, New Delhi',period:'2021',description:'Secondary education.',highlights:[]},
   ] as {degree:string; institution:string; period:string; description:string; highlights:string[]}[],
+  experience: [
+    { company: 'BYPL', role: 'Data Analyst Intern', period: 'May–July 2026', duration: '2 months' },
+    { company: 'Viva Fit', role: 'Machine Learning Intern', period: 'May–July 2025', duration: '2 months' },
+  ],
 };
