@@ -1,5 +1,16 @@
 [
   {
+    "title": "Retail Sales Forecasting and Analysis",
+    "track": "analytics",
+    "category": "RETAIL / DEMAND FORECASTING",
+    "description": "Analyzes historical demand across 54 stores and 33 product families using DuckDB SQL and Power BI, then forecasts 16 days of unit sales with LightGBM.",
+    "skills": ["Python", "DuckDB SQL", "LightGBM", "Power BI", "Time series forecasting"],
+    "repo": "https://github.com/DaksheshGautam/retail-sales-forcasting-and-analysis",
+    "image": "projects/retail-sales-forecasting.png",
+    "imageAlt": "Historical demand forecast backtests",
+    "note": "LightGBM reduced RMSLE by 27.21% against a seasonal naive baseline across three chronological backtests."
+  },
+  {
     "title": "Funnel and Retention Analysis",
     "track": "analytics",
     "category": "E-COMMERCE / BUSINESS INTELLIGENCE",
