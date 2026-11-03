@@ -1,6 +1,17 @@
 [
   {
     "title": "Retail Sales Forecasting and Analysis",
+    "track": "science",
+    "category": "MACHINE LEARNING / TIME SERIES FORECASTING",
+    "description": "Forecasts 16 days of unit sales across 54 stores and 33 product families with LightGBM. Evaluates forecasts against a seasonal naive baseline using three chronological backtests.",
+    "skills": ["Python", "LightGBM", "Time series forecasting", "Model evaluation", "DuckDB SQL"],
+    "repo": "https://github.com/DaksheshGautam/retail-sales-forcasting-and-analysis",
+    "image": "projects/retail-fieldnotes.png",
+    "imageAlt": "Retail Fieldnotes dashboard showing sales and store performance",
+    "note": "LightGBM reduced RMSLE by 27.21% against the seasonal naive baseline."
+  },
+  {
+    "title": "Retail Sales Forecasting and Analysis",
     "track": "analytics",
     "category": "RETAIL / DEMAND FORECASTING",
     "description": "Analyzes historical demand across 54 stores and 33 product families using DuckDB SQL and Power BI, then forecasts 16 days of unit sales with LightGBM.",
