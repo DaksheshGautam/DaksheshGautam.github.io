@@ -7,11 +7,11 @@
     "verify": "https://www.coursera.org/account/accomplishments/specialization/QL3U984QAIXB",
     "skills": ["SQL Server", "Excel", "Copilot", "Power BI", "Data visualization"],
     "courses": [
-      {"title": "SQL Foundations"},
-      {"title": "Data Manipulation and Transactions in SQL Server"},
-      {"title": "Data Cleaning & Processing with Copilot in Excel"},
-      {"title": "Advanced Data Analysis & Visualization with Copilot in Excel"},
-      {"title": "Data Analysis and Visualization with Power BI"}
+      {"id": "U6E3PLCD8GS1", "title": "SQL Foundations"},
+      {"id": "GF6CLE4ERCN6", "title": "Data Manipulation and Transactions in SQL Server"},
+      {"id": "Y2USWQTHBZN6", "title": "Data Cleaning & Processing with Copilot in Excel"},
+      {"id": "VDK3D4NW5WZJ", "title": "Advanced Data Analysis & Visualization with Copilot in Excel"},
+      {"id": "CL2BUTOY33QF", "title": "Data Analysis and Visualization with Power BI"}
     ]
   },
   {
