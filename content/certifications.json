@@ -1,5 +1,20 @@
 [
   {
+    "id": "QL3U984QAIXB",
+    "title": "Microsoft Data Analysis with SQL, Excel & Power BI Specialization",
+    "track": "analytics",
+    "issuer": "Microsoft · Coursera",
+    "verify": "https://www.coursera.org/account/accomplishments/specialization/QL3U984QAIXB",
+    "skills": ["SQL Server", "Excel", "Copilot", "Power BI", "Data visualization"],
+    "courses": [
+      {"title": "SQL Foundations"},
+      {"title": "Data Manipulation and Transactions in SQL Server"},
+      {"title": "Data Cleaning & Processing with Copilot in Excel"},
+      {"title": "Advanced Data Analysis & Visualization with Copilot in Excel"},
+      {"title": "Data Analysis and Visualization with Power BI"}
+    ]
+  },
+  {
     "id": "Q5EI5EGSR2WS",
     "title": "IBM Data Analyst Professional Certificate",
     "track": "analytics",
