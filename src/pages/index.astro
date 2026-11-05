@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import {profile} from '../data/profile';
+import {certifications} from '../data/certificates';
 import {localUrl} from '../data/urls';
 ---
 <Layout>
@@ -20,7 +21,16 @@ import {localUrl} from '../data/urls';
   </section>
 </section>
 <section id="explore" class="container explore"><div class="section-heading"><p class="eyebrow">02 / EXPLORE THE WORK</p><p>Choose the perspective that fits your role.</p></div><div class="track-grid"><a class="track-card analytics-track" href={localUrl('data-analytics/')}><div class="track-top"><span class="eyebrow">INSIGHT & DECISION-MAKING</span><span aria-hidden="true">↗</span></div><div class="mini-chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><h2>Data Analytics</h2><p>Clean data. Clear dashboards.<br/>Answers that help decisions.</p><span class="track-link">Explore analytics portfolio <span>→</span></span></a><a class="track-card science-track" href={localUrl('data-science/')}><div class="track-top"><span class="eyebrow">MODELS & EXPERIMENTATION</span><span aria-hidden="true">↗</span></div><div class="mini-network" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><h2>Data Science</h2><p>Thoughtful experiments.<br/>Models built to be questioned.</p><span class="track-link">Explore science portfolio <span>→</span></span></a></div></section>
-<section class="container education"><div><p class="eyebrow">03 / EDUCATION & LEARNING</p><h2>A foundation.<br/><em>Always growing.</em></h2><p>Structured learning, strengthened through practical projects.</p></div><div class="education-records">{profile.education.map(e=><article><p class="eyebrow">{e.period}</p><h3>{e.degree}</h3><p>{e.institution}</p><p>{e.description}</p><ul>{e.highlights.map(h=><li>{h}</li>)}</ul></article>)}<article><span class="education-date">2026</span><h3>IBM Data Analyst</h3><p>Professional Certificate · Coursera</p><p>11 completed courses covering Excel, SQL, Python, dashboards, and a capstone project.</p><a class="text-link" href={localUrl('data-analytics/#certifications')}>Explore credential & courses ↗</a></article><article><span class="education-date">2026</span><h3>IBM Data Science</h3><p>Professional Certificate · Coursera</p><p>12 completed courses covering data science methodology, Python, SQL, machine learning, and applied projects.</p><a class="text-link" href={localUrl('data-science/#certifications')}>Explore credential & courses ↗</a></article>{profile.education.length===0 && <p class="pending-content">Academic education details will be added here.</p>}</div></section>
+<section class="container education"><div><p class="eyebrow">03 / EDUCATION & LEARNING</p><h2>A foundation.<br/><em>Always growing.</em></h2><p>Structured learning, strengthened through practical projects.</p></div><div class="education-records">{profile.education.map(e=><article><p class="eyebrow">{e.period}</p><h3>{e.degree}</h3><p>{e.institution}</p><p>{e.description}</p><ul>{e.highlights.map(h=><li>{h}</li>)}</ul></article>)}
+  {certifications.map(cert => (
+    <article>
+      <h3>{cert.title}</h3>
+      {cert.issuer && <p>{cert.issuer}</p>}
+      {cert.courses.length > 0 && <p>{cert.courses.length} completed courses</p>}
+      <a class="text-link" href={localUrl(`data-${cert.track}/#${cert.id ? `credential-${cert.id}` : 'certifications'}`)}>Explore credential & courses ↗</a>
+    </article>
+  ))}
+{profile.education.length===0 && <p class="pending-content">Academic education details will be added here.</p>}</div></section>
 </Layout>
 
 <style>
