@@ -11,7 +11,7 @@ export const profile = {
     {degree:'B.Tech in Electrical Engineering',institution:'Netaji Subhas University of Technology (NSUT), New Delhi',period:'Expected 2027',description:'',highlights:[]},
   ] as {degree:string; institution:string; period:string; description:string; highlights:string[]}[],
   experience: [
-    { company: 'BYPL', role: 'Data Analyst Intern', period: 'May–July 2026', duration: '2 months' },
-    { company: 'Viva Fit', role: 'Machine Learning Intern', period: 'May–July 2025', duration: '2 months' },
+    { company: 'BYPL', role: 'Data Analyst Intern', period: 'May–July 2026', duration: '3 months' },
+    { company: 'Viva Fit', role: 'Machine Learning Intern', period: 'May–July 2025', duration: '3 months' },
   ],
 };
